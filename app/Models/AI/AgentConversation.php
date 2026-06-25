@@ -2,11 +2,10 @@
 
 namespace App\Models\AI;
 
-use App\Models\AI\AgentConversationMessage;
 use App\Models\User;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class AgentConversation extends Model
 {
@@ -62,17 +61,11 @@ class AgentConversation extends Model
         return [];
     }
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }
-    
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
+
     public function messages(): HasMany
     {
         return $this->hasMany(AgentConversationMessage::class);

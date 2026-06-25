@@ -2,9 +2,8 @@
 
 namespace App\Models\AI;
 
-use App\Models\AI\AgentConversation;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class AgentConversationMessage extends Model
 {
@@ -34,9 +33,6 @@ class AgentConversationMessage extends Model
         'meta',
     ];
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
     public function connection(): BelongsTo
     {
         return $this->belongsTo(AgentConversation::class);

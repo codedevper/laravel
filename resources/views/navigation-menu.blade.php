@@ -15,6 +15,27 @@
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link href="{{ route('php.dashboard') }}" :active="request()->routeIs('php.dashboard') || request()->routeIs('php.settings')">
+                        {{ __('PHP') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('apache.dashboard') }}" :active="request()->routeIs('apache.*')">
+                        {{ __('Apache') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('wp-toolkits.dashboard') }}" :active="request()->routeIs('wp-toolkits.*')">
+                        {{ __('WP') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('node.dashboard') }}" :active="request()->routeIs('node.*')">
+                        {{ __('Node') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('system.dashboard') }}" :active="request()->routeIs('system.*')">
+                        {{ __('System') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('quota.dashboard') }}" :active="request()->routeIs('quota.*')">
+                        {{ __('Quota') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('firewall.dashboard') }}" :active="request()->routeIs('firewall.*')">
+                        {{ __('Firewall') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -141,6 +162,27 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('php.dashboard') }}" :active="request()->routeIs('php.dashboard') || request()->routeIs('php.settings')">
+                {{ __('PHP') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('apache.dashboard') }}" :active="request()->routeIs('apache.*')">
+                {{ __('Apache') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('wp-toolkits.dashboard') }}" :active="request()->routeIs('wp-toolkits.*')">
+                {{ __('WP') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('node.dashboard') }}" :active="request()->routeIs('node.*')">
+                {{ __('Node') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('system.dashboard') }}" :active="request()->routeIs('system.*')">
+                {{ __('System') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('quota.dashboard') }}" :active="request()->routeIs('quota.*')">
+                {{ __('Quota') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('firewall.dashboard') }}" :active="request()->routeIs('firewall.*')">
+                {{ __('Firewall') }}
             </x-responsive-nav-link>
         </div>
 

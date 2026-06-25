@@ -80,10 +80,7 @@ class User extends Authenticatable
     {
         return $this->current_team_id === 1;
     }
-    
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
+
     public function connections(): HasMany
     {
         return $this->hasMany(AgentConversation::class);
