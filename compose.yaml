@@ -76,6 +76,15 @@ services:
             - '${FORWARD_MEMCACHED_PORT:-11211}:11211'
         networks:
             - server
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8080:8080
+        networks:
+            - server
+        depends_on:
+            - mariadb
 networks:
     server:
         driver: bridge

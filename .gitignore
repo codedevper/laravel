@@ -25,3 +25,4 @@ Thumbs.db
 
 docker/database/mariadb/mysql
 docker/database/redis/data
+docker/services

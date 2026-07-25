@@ -24,6 +24,9 @@
                     <x-nav-link href="{{ url('horizon') }}" target="_blank">
                         {{ __('Horizon') }}
                     </x-nav-link>
+                    <x-nav-link href="http://localhost:8080" target="_blank">
+                        {{ __('Adminer') }}
+                    </x-nav-link>
                 </div>
             </div>
 
