@@ -22,3 +22,6 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+docker/database/mariadb/mysql
+docker/database/redis/data
